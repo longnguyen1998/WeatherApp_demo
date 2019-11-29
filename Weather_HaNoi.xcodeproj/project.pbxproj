@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE19FA2D238E34AA006F9172 /* modeDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19FA2C238E34AA006F9172 /* modeDays.swift */; };
+		FE19FA2F238E5F4E006F9172 /* WeatherCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19FA2E238E5F4E006F9172 /* WeatherCellTableViewCell.swift */; };
+		FE69AF36238D184300ABA3DD /* SearchAllTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE69AF35238D184300ABA3DD /* SearchAllTableViewController.swift */; };
 		FEAF7D2F238BE219003ECE30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAF7D2E238BE219003ECE30 /* AppDelegate.swift */; };
 		FEAF7D31238BE219003ECE30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAF7D30238BE219003ECE30 /* SceneDelegate.swift */; };
 		FEAF7D33238BE219003ECE30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAF7D32238BE219003ECE30 /* ViewController.swift */; };
 		FEAF7D36238BE219003ECE30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAF7D34238BE219003ECE30 /* Main.storyboard */; };
 		FEAF7D38238BE21C003ECE30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEAF7D37238BE21C003ECE30 /* Assets.xcassets */; };
 		FEAF7D3B238BE21C003ECE30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAF7D39238BE21C003ECE30 /* LaunchScreen.storyboard */; };
+		FEAF7D43238BEDB3003ECE30 /* modeWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAF7D42238BEDB3003ECE30 /* modeWeather.swift */; };
+		FEE3BFB6238F68A300D86939 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = FEE3BFB5238F68A300D86939 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE19FA2C238E34AA006F9172 /* modeDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modeDays.swift; sourceTree = "<group>"; };
+		FE19FA2E238E5F4E006F9172 /* WeatherCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCellTableViewCell.swift; sourceTree = "<group>"; };
+		FE69AF35238D184300ABA3DD /* SearchAllTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAllTableViewController.swift; sourceTree = "<group>"; };
 		FEAF7D2B238BE219003ECE30 /* Weather_HaNoi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather_HaNoi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAF7D2E238BE219003ECE30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEAF7D30238BE219003ECE30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,7 @@
 		FEAF7D37238BE21C003ECE30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEAF7D3A238BE21C003ECE30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEAF7D3C238BE21C003ECE30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEAF7D42238BEDB3003ECE30 /* modeWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modeWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE3BFB6238F68A300D86939 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +73,10 @@
 				FEAF7D37238BE21C003ECE30 /* Assets.xcassets */,
 				FEAF7D39238BE21C003ECE30 /* LaunchScreen.storyboard */,
 				FEAF7D3C238BE21C003ECE30 /* Info.plist */,
+				FEAF7D42238BEDB3003ECE30 /* modeWeather.swift */,
+				FE69AF35238D184300ABA3DD /* SearchAllTableViewController.swift */,
+				FE19FA2C238E34AA006F9172 /* modeDays.swift */,
+				FE19FA2E238E5F4E006F9172 /* WeatherCellTableViewCell.swift */,
 			);
 			path = Weather_HaNoi;
 			sourceTree = "<group>";
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = Weather_HaNoi;
+			packageProductDependencies = (
+				FEE3BFB5238F68A300D86939 /* SwiftyJSON */,
+			);
 			productName = Weather_HaNoi;
 			productReference = FEAF7D2B238BE219003ECE30 /* Weather_HaNoi.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = FEAF7D22238BE219003ECE30;
+			packageReferences = (
+				FEE3BFB4238F68A300D86939 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = FEAF7D2C238BE219003ECE30 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +160,11 @@
 			files = (
 				FEAF7D33238BE219003ECE30 /* ViewController.swift in Sources */,
 				FEAF7D2F238BE219003ECE30 /* AppDelegate.swift in Sources */,
+				FE19FA2D238E34AA006F9172 /* modeDays.swift in Sources */,
+				FE19FA2F238E5F4E006F9172 /* WeatherCellTableViewCell.swift in Sources */,
+				FEAF7D43238BEDB3003ECE30 /* modeWeather.swift in Sources */,
 				FEAF7D31238BE219003ECE30 /* SceneDelegate.swift in Sources */,
+				FE69AF36238D184300ABA3DD /* SearchAllTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FEE3BFB4238F68A300D86939 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FEE3BFB5238F68A300D86939 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEE3BFB4238F68A300D86939 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FEAF7D23238BE219003ECE30 /* Project object */;
 }
